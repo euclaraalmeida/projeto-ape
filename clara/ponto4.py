@@ -71,8 +71,8 @@ def imprimir_percentuais(total, contadores, contadores_grau, cargo):
         print(f'{(contadores_grau["SUPERIOR COMPLETO"] / total) * 100:.2f}% com Superior Completo')
         print()
     
-with open("clara/arquivo_juntos.txt", "r",encoding="utf-8") as arquivo_juntos:
-    arqv_todos = montar_lista(arquivo_juntos)
+with open("clara/juntos.txt", "r",encoding="utf-8") as juntos:
+    arqv_todos = montar_lista(juntos)
 
 # Contando e imprimindo dados para cada cargo
 for cargo in ["VEREADOR", "PREFEITO", "VICE-PREFEITO"]:
